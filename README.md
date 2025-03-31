@@ -5,6 +5,11 @@
 ## Project info
 [My Medium Post with details](https://medium.com/@xeniya-shoiko/when-marching-bands-and-apps-collide-my-grand-finale-of-an-idea-f705afd2438b)
 
+## Mass Messaging System for Event Organizers:
+
+<img width="500" alt="Event Organizer's Message View" src="https://github.com/user-attachments/assets/07d5fc41-0243-445f-8fc6-4be1f6989e55" />
+
+
 ## What technologies are used for this project?
 
 This project is built with 
