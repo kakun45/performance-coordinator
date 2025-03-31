@@ -1,10 +1,26 @@
 # Welcome to my Performance Coordinator App!
 
+<img width="580" alt="Performance Coordinator App logIn Page" src="https://github.com/user-attachments/assets/41339e25-83b7-41a5-badb-9028e7cf59e3" />
+
 ## Project info
+[My Medium Post with details](https://medium.com/@xeniya-shoiko/when-marching-bands-and-apps-collide-my-grand-finale-of-an-idea-f705afd2438b)
 
-**URL**: https://lovable.dev/projects/d8d1c906-2156-423b-bfb1-cbd255a0a0cc
+## What technologies are used for this project?
 
-## How can I edit this code?
+This project is built with 
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## Deployed
+
+[Performance Coordinator by Xeniya Shoiko](https://performance-coordinator.lovable.app/login) 
+
+
+## How can You edit this code?
 
 There are several ways of editing your application.
 
@@ -30,7 +46,7 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+**Edit a file directly in your GitHub**
 
 - Navigate to the desired file(s).
 - Click the "Edit" button (pencil icon) at the top right of the file view.
@@ -44,16 +60,3 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## Deployed
-
-[Performance Coordinator by Xeniya Shoiko](https://performance-coordinator.lovable.app/login) 
