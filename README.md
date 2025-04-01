@@ -5,9 +5,17 @@
 ## Project info
 [My Medium Post with details](https://medium.com/@xeniya-shoiko/when-marching-bands-and-apps-collide-my-grand-finale-of-an-idea-f705afd2438b)
 
-## Mass Messaging System for Event Organizers:
+## Mass Messaging System for Event Organizers/Directors:
 
 <img width="500" alt="Event Organizer's Message View" src="https://github.com/user-attachments/assets/07d5fc41-0243-445f-8fc6-4be1f6989e55" />
+
+## Mass Messaging System receiver side for a Performer:
+<img width="485" alt="Event Performer's Message View" src="https://github.com/user-attachments/assets/f5145940-1815-4066-a8e3-e77aaee840f6" />
+
+## Usage:
+
+
+https://github.com/user-attachments/assets/a33da31f-d253-41e6-91ee-872445569f79
 
 
 ## What technologies are used for this project?
