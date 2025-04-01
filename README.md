@@ -1,4 +1,5 @@
 # Welcome to my Performance Coordinator App!
+![MockUp iPhone of Performance Coordinator app](https://github.com/user-attachments/assets/1f3925cc-15b0-4d62-b79f-cf6fde7589c1)
 
 <img width="580" alt="Performance Coordinator App logIn Page" src="https://github.com/user-attachments/assets/41339e25-83b7-41a5-badb-9028e7cf59e3" />
 
