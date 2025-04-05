@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { toast } from "sonner";
 
@@ -60,6 +59,8 @@ interface EventContextType {
   updateEvent: (event: Event) => void;
   deleteEvent: (eventId: string) => void;
   addAnnouncement: (announcement: Omit<Announcement, 'id' | 'timestamp'>) => void;
+  updateAnnouncement: (announcement: Announcement) => void;
+  deleteAnnouncement: (announcementId: string) => void;
   updatePerformerLocation: (location: Omit<PerformerLocation, 'lastUpdated'>) => void;
   setCurrentVenue: (venueId: string) => void;
 }
@@ -259,6 +260,18 @@ export const EventProvider = ({ children }: { children: ReactNode }) => {
     toast.success("Announcement broadcast successfully!");
   };
 
+  const updateAnnouncement = (updatedAnnouncement: Announcement) => {
+    setAnnouncements(announcements.map(announcement => 
+      announcement.id === updatedAnnouncement.id ? updatedAnnouncement : announcement
+    ));
+    toast.success("Announcement updated successfully!");
+  };
+
+  const deleteAnnouncement = (announcementId: string) => {
+    setAnnouncements(announcements.filter(announcement => announcement.id !== announcementId));
+    toast.success("Announcement deleted successfully!");
+  };
+
   const updatePerformerLocation = (locationData: Omit<PerformerLocation, 'lastUpdated'>) => {
     const updatedLocation = {
       ...locationData,
@@ -297,6 +310,8 @@ export const EventProvider = ({ children }: { children: ReactNode }) => {
         updateEvent,
         deleteEvent,
         addAnnouncement,
+        updateAnnouncement,
+        deleteAnnouncement,
         updatePerformerLocation,
         setCurrentVenue: setVenueById
       }}
