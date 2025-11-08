@@ -22,13 +22,13 @@ const Layout = ({ children, title }: LayoutProps) => {
         </header>
       )}
       
-      <main className="flex-1 container pb-20">
+      <main className="flex-1 container pb-32">
         {children}
       </main>
       
       {isAuthenticated && (
         <>
-          <div className="border-t bg-background/95 backdrop-blur py-3 pb-20">
+          <div className="fixed bottom-16 left-0 right-0 border-t bg-background/95 backdrop-blur py-3 z-40">
             <div className="container flex items-center justify-center gap-6">
               <a 
                 href="https://medium.com/@xeniya-shoiko/when-marching-bands-and-apps-collide-my-grand-finale-of-an-idea-f705afd2438b" 
