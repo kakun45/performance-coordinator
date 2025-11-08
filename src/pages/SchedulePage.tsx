@@ -120,7 +120,7 @@ const SchedulePage = () => {
             
             {dates.map((date) => (
               <TabsContent key={date} value={date} className="mt-0">
-                <ScrollArea className="h-[400px] pr-4">
+                <ScrollArea className="h-[calc(100vh-28rem)] min-h-[400px] pr-4">
                   <div className="space-y-4">
                     {eventsByDate[date]
                       .sort((a, b) => parseISO(a.startTime).getTime() - parseISO(b.startTime).getTime())
