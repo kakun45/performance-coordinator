@@ -2,6 +2,7 @@
 import React, { ReactNode } from 'react';
 import BottomNavigation from './BottomNavigation';
 import { useAuth } from '@/contexts/AuthContext';
+import { FileText, Linkedin } from 'lucide-react';
 
 interface LayoutProps {
   children: ReactNode;
@@ -25,7 +26,33 @@ const Layout = ({ children, title }: LayoutProps) => {
         {children}
       </main>
       
-      {isAuthenticated && <BottomNavigation />}
+      {isAuthenticated && (
+        <>
+          <div className="border-t bg-background/95 backdrop-blur py-3">
+            <div className="container flex items-center justify-center gap-6">
+              <a 
+                href="https://medium.com/@xeniya-shoiko/when-marching-bands-and-apps-collide-my-grand-finale-of-an-idea-f705afd2438b" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
+              >
+                <FileText className="w-4 h-4" />
+                <span>About</span>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/xeniya-shoiko/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
+              >
+                <Linkedin className="w-4 h-4" />
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          <BottomNavigation />
+        </>
+      )}
     </div>
   );
 };

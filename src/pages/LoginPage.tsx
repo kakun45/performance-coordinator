@@ -9,6 +9,7 @@ import { useAuth, UserRole } from '@/contexts/AuthContext';
 import { toast } from 'sonner';
 import { useNavigate } from 'react-router-dom';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { FileText, Linkedin } from 'lucide-react';
 
 const LoginPage = () => {
   // Login state
@@ -199,6 +200,27 @@ const LoginPage = () => {
             </Card>
           </TabsContent>
         </Tabs>
+        
+        <div className="flex items-center justify-center gap-6 mt-6">
+          <a 
+            href="https://medium.com/@xeniya-shoiko/when-marching-bands-and-apps-collide-my-grand-finale-of-an-idea-f705afd2438b" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gold-500 hover:text-gold-400 transition-colors"
+          >
+            <FileText className="w-5 h-5" />
+            <span>About</span>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/xeniya-shoiko/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gold-500 hover:text-gold-400 transition-colors"
+          >
+            <Linkedin className="w-5 h-5" />
+            <span>LinkedIn</span>
+          </a>
+        </div>
       </div>
     </div>
   );
