@@ -53,7 +53,7 @@ const SchedulePage = () => {
       <div className="py-4 space-y-4">
         {/* Now & Upcoming Section */}
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Today's Schedule</h2>
+          <h2 className="text-lg font-semibold mb-2">Today's Schedule</h2>
           
           {currentEvents.length > 0 && (
             <div className="mb-6">
@@ -92,7 +92,7 @@ const SchedulePage = () => {
           )}
           
           {currentEvents.length === 0 && upcomingEvents.length === 0 && (
-            <div className="text-center py-3 text-muted-foreground text-sm">
+            <div className="text-center py-2 text-muted-foreground text-sm">
               No more events scheduled for today.
             </div>
           )}
