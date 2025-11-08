@@ -21,11 +21,11 @@ const EventCard: React.FC<EventCardProps> = ({ event, onClick, compact = false }
   
   return (
     <Card className={`w-full card-hover overflow-hidden ${compact ? 'bg-muted/50' : ''}`}>
-      <CardHeader className={`pb-2 ${compact ? 'p-3' : ''}`}>
+      <CardHeader className={`p-4 pb-2 ${compact ? 'p-3' : ''}`}>
         <div className="flex items-start justify-between">
           <div>
-            <CardTitle className={compact ? "text-lg" : "text-xl"}>{event.name}</CardTitle>
-            <CardDescription className="mt-1 text-sm text-muted-foreground">
+            <CardTitle className={compact ? "text-base" : "text-lg"}>{event.name}</CardTitle>
+            <CardDescription className="mt-0.5 text-sm text-muted-foreground">
               {!compact && event.description}
             </CardDescription>
           </div>
@@ -41,8 +41,8 @@ const EventCard: React.FC<EventCardProps> = ({ event, onClick, compact = false }
           )}
         </div>
       </CardHeader>
-      <CardContent className={compact ? 'p-3 pt-0' : 'pb-3'}>
-        <div className="flex flex-col gap-2">
+      <CardContent className={compact ? 'p-3 pt-0' : 'px-4 pb-3'}>
+        <div className="flex flex-col gap-1.5">
           <div className="flex items-center text-muted-foreground">
             <CalendarIcon className="mr-2 h-4 w-4" />
             <span className="text-sm">
@@ -56,7 +56,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, onClick, compact = false }
         </div>
       </CardContent>
       {!compact && (
-        <CardFooter className="pt-1">
+        <CardFooter className="px-4 pt-1 pb-4">
           <Button variant="outline" onClick={onClick} className="w-full">View Details</Button>
         </CardFooter>
       )}
